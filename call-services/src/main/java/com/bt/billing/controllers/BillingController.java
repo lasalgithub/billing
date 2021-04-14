@@ -1,5 +1,8 @@
-package com.example.Billing;
+package com.bt.billing.controllers;
 
+import com.bt.billing.models.Bill;
+import com.bt.billing.dto.*;
+import com.bt.billing.services.BillingService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

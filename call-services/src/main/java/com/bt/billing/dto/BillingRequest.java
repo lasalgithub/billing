@@ -1,6 +1,6 @@
-package com.example.Billing;
+package com.bt.billing.dto;
 
-class BillingRequest {
+public class BillingRequest {
     public Long Id;
     public String name;
     public double amount;

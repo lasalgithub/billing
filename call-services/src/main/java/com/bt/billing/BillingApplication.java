@@ -1,4 +1,4 @@
-package com.example.Billing;
+package com.bt.billing;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

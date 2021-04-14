@@ -1,5 +1,7 @@
-package com.example.Billing;
+package com.bt.billing.services;
 
+import com.bt.billing.models.*;
+import com.bt.billing.repositories.*;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,19 +15,20 @@ public class BillingService {
         this.repository = repository;
     }
 
-    List<Bill> GetAllBills(){
+    public List<Bill> GetAllBills(){
         return repository.findAll();
     }
 
-    Bill UpsertBill(Bill upsertingBill){
+    public Bill UpsertBill(Bill upsertingBill){
         return repository.save(upsertingBill);
     }
 
-    Bill GetBill(Long id){
+    public Bill GetBill(Long id){
         return repository.findById(id).orElse(null);
     }
 
-    void DeleteBill(Long id){
+    public void DeleteBill(Long id){
         repository.deleteById(id);
     }
 }
+

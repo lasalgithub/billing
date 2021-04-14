@@ -1,11 +1,11 @@
-package com.example.Billing;
+package com.bt.billing.models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-class Bill {
+public class Bill {
     private @Id @GeneratedValue Long Id;
     private String name;
     private double amount;
